@@ -1,0 +1,404 @@
+[
+  {
+    "brand_id": "33153",
+    "brand_name": "Gynolac",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32846",
+    "brand_name": "Laxadil-Senna",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33154",
+    "brand_name": "Lactoflora",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33118",
+    "brand_name": "Menoherb",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33119",
+    "brand_name": "Ocuberry",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33106",
+    "brand_name": "Turmeric",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33129",
+    "brand_name": "Urican",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32474",
+    "brand_name": "Affrox",
+    "generic_name": "",
+    "reason": "Missing brand or generic name"
+  },
+  {
+    "brand_id": "31295",
+    "brand_name": "Afatin",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "28130",
+    "brand_name": "Apnac",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33022",
+    "brand_name": "Baloflu",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33023",
+    "brand_name": "Baloflu",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32625",
+    "brand_name": "Bemvas",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32624",
+    "brand_name": "Belopid",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33197",
+    "brand_name": "Bilan Kids",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33108",
+    "brand_name": "Cabazol",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "14885",
+    "brand_name": "Cholera Fluid",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32374",
+    "brand_name": "Conloss",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "29433",
+    "brand_name": "Covishield",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33097",
+    "brand_name": "Cozen",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "19779",
+    "brand_name": "Dextrose",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "14906",
+    "brand_name": "Dextran 70",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "14905",
+    "brand_name": "Dextran 40",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "19759",
+    "brand_name": "Dextran",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "14904",
+    "brand_name": "Dextran",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "30389",
+    "brand_name": "Dilatin SR",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "30388",
+    "brand_name": "Dilatin SR",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "29500",
+    "brand_name": "Drospi",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32397",
+    "brand_name": "Droslyn",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32398",
+    "brand_name": "Eclamag",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "14883",
+    "brand_name": "Glucose Saline",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33126",
+    "brand_name": "Hertinib",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "16989",
+    "brand_name": "Hi Floxin",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "16990",
+    "brand_name": "Hi Floxin",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "25496",
+    "brand_name": "Kashba",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "15433",
+    "brand_name": "Ketoseem",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33183",
+    "brand_name": "Lamitan",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33184",
+    "brand_name": "Lamitan",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32988",
+    "brand_name": "Lamitrin ER",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32823",
+    "brand_name": "Leukenib",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "31189",
+    "brand_name": "Lotenib",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "25451",
+    "brand_name": "Micro",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33182",
+    "brand_name": "Midita",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33181",
+    "brand_name": "Midita",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "21959",
+    "brand_name": "Milk of Magnesia",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33077",
+    "brand_name": "Mycofree-OC",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33196",
+    "brand_name": "Myosit",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32275",
+    "brand_name": "Neocafen",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33089",
+    "brand_name": "Nilonib",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "14867",
+    "brand_name": "Normal Saline",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32816",
+    "brand_name": "Ovaxa",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32277",
+    "brand_name": "Palopag",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32276",
+    "brand_name": "Palopag",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "23361",
+    "brand_name": "Panto SP",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "23531",
+    "brand_name": "Paramol",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "31167",
+    "brand_name": "Parib",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "31166",
+    "brand_name": "Parib",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "31182",
+    "brand_name": "Pazonib",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33090",
+    "brand_name": "Pazoren",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "31869",
+    "brand_name": "Pregcare",
+    "generic_name": "",
+    "reason": "Missing brand or generic name"
+  },
+  {
+    "brand_id": "33091",
+    "brand_name": "Prostalex",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32819",
+    "brand_name": "Reganex",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "24243",
+    "brand_name": "Riboseem",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "24238",
+    "brand_name": "Riboflavin",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "17050",
+    "brand_name": "Seematrin DS",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "21938",
+    "brand_name": "Seemaldrat",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "22437",
+    "brand_name": "Seemagyl",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "25382",
+    "brand_name": "Seema-C",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32530",
+    "brand_name": "Semaglut",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32529",
+    "brand_name": "Semaglut",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32382",
+    "brand_name": "Serivan",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "25624",
+    "brand_name": "Soto",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32894",
+    "brand_name": "Tamsulin",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33171",
+    "brand_name": "Twincard",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32470",
+    "brand_name": "Uroblock",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32469",
+    "brand_name": "Uroblock",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33103",
+    "brand_name": "Veneta",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "33102",
+    "brand_name": "Veneta",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32783",
+    "brand_name": "Viera",
+    "reason": "Missing verified pricing in registry"
+  },
+  {
+    "brand_id": "32782",
+    "brand_name": "Viera",
+    "reason": "Missing verified pricing in registry"
+  }
+]

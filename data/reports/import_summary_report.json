@@ -1,0 +1,22 @@
+{
+  "report_id": "REP-DGDA-IMPORT-1795682764",
+  "timestamp": "2026-11-26T14:46:01.753308",
+  "previous_medicine_count": 25,
+  "current_medicine_count": 21646,
+  "newly_imported_records": 21621,
+  "unique_brands_count": 13929,
+  "unique_generic_compositions_count": 1661,
+  "unique_active_ingredients_count": 1685,
+  "unique_manufacturers_count": 232,
+  "unique_dosage_forms_count": 112,
+  "officially_verified_count": 21568,
+  "secondary_verified_count": 78,
+  "pending_review_count": 0,
+  "duplicate_candidates_detected": 66,
+  "records_missing_info": 80,
+  "sources": [
+    "Directorate General of Drug Administration (DGDA) Registered Drug Registry",
+    "DGHS FHIR Registered Drugs ValueSet",
+    "Bangladesh National Drug Directory Allopathic Formulations"
+  ]
+}

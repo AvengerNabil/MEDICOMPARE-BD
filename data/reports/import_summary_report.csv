@@ -1,0 +1,15 @@
+Metric,Value,Description
+Report ID,REP-DGDA-IMPORT-1795682764,Audit Identifier
+Timestamp,2026-11-26T14:46:01.753308,Ingestion Execution Time
+Previous Medicine Count,25,Pre-expansion baseline count
+Current Medicine Count,21646,Total verified and normalized records
+Newly Imported Records,21621,Net expansion delta
+Unique Brands,13929,Distinct commercial trademarks in Bangladesh
+Unique Generic Compositions,1661,Distinct molecular and combination INNs
+Active Ingredients,1685,Unique APIs parsed across all medicines
+Manufacturers,232,DGDA licensed pharmaceutical companies
+Officially Verified,21568,Records with official MRP & license
+Secondary Verified,78,Records verified via manufacturer registry
+Pending Review,0,Records requiring further manual validation
+Duplicates Filtered,66,Duplicate brand-strength combinations prevented
+Records with Missing Info,80,Entries lacking complete pricing or metadata

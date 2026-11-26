@@ -1,0 +1,530 @@
+[
+  {
+    "brand_id": "29376",
+    "brand_name": "Isabgul Plus",
+    "strength": "(3 gm+1 gm)/4 gm",
+    "dosage_form": "Effervescent Powder",
+    "manufacturer": "Ibn Sina Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "31649"
+  },
+  {
+    "brand_id": "13737",
+    "brand_name": "Allbeevit",
+    "strength": "",
+    "dosage_form": "Tablet",
+    "manufacturer": "Medimet Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "13739"
+  },
+  {
+    "brand_id": "21057",
+    "brand_name": "Amidol",
+    "strength": "370 mg/ml",
+    "dosage_form": "Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "28431"
+  },
+  {
+    "brand_id": "16759",
+    "brand_name": "Ansulin R",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Square Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "16760"
+  },
+  {
+    "brand_id": "16806",
+    "brand_name": "Ansulin",
+    "strength": "50%+50% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Square Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "16805"
+  },
+  {
+    "brand_id": "16804",
+    "brand_name": "Ansulin",
+    "strength": "30%+70% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Square Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "16803"
+  },
+  {
+    "brand_id": "28129",
+    "brand_name": "Apnac",
+    "strength": "50 mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "duplicate_of_brand_id": "28130"
+  },
+  {
+    "brand_id": "3432",
+    "brand_name": "Asthmolin",
+    "strength": "2 mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Pharmadesh Laboratories Ltd.",
+    "duplicate_of_brand_id": "21638"
+  },
+  {
+    "brand_id": "3443",
+    "brand_name": "Azmasol",
+    "strength": "100 mcg/puff",
+    "dosage_form": "Inhaler",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "3446"
+  },
+  {
+    "brand_id": "14481",
+    "brand_name": "Bpcal D",
+    "strength": "500 mg+200 IU",
+    "dosage_form": "Tablet",
+    "manufacturer": "Bristol Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "14408"
+  },
+  {
+    "brand_id": "3458",
+    "brand_name": "Brodil",
+    "strength": "100 mcg/puff",
+    "dosage_form": "Inhaler",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "3457"
+  },
+  {
+    "brand_id": "14255",
+    "brand_name": "Calcium-Jayson",
+    "strength": "500 mg/5 ml",
+    "dosage_form": "IM/IV Injection",
+    "manufacturer": "Jayson Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "27137"
+  },
+  {
+    "brand_id": "818",
+    "brand_name": "Calock Plus",
+    "strength": "5 mg+50 mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Medimet Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "819"
+  },
+  {
+    "brand_id": "404",
+    "brand_name": "Chemocain-A",
+    "strength": "2%+0.0005%",
+    "dosage_form": "Injection",
+    "manufacturer": "Chemist Laboratories Ltd.",
+    "duplicate_of_brand_id": "30531"
+  },
+  {
+    "brand_id": "16830",
+    "brand_name": "Acilog Mix",
+    "strength": "30%+70%",
+    "dosage_form": "SC Injection",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "27536"
+  },
+  {
+    "brand_id": "4836",
+    "brand_name": "Cloron",
+    "strength": "2 mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "30834"
+  },
+  {
+    "brand_id": "16776",
+    "brand_name": "Acilog",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "27535"
+  },
+  {
+    "brand_id": "21061",
+    "brand_name": "Diapamiro",
+    "strength": "370 mg/ml",
+    "dosage_form": "Injection",
+    "manufacturer": "Techno Drugs Ltd.",
+    "duplicate_of_brand_id": "21062"
+  },
+  {
+    "brand_id": "32029",
+    "brand_name": "Diasulin R",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "16762"
+  },
+  {
+    "brand_id": "16789",
+    "brand_name": "Diasulin N",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "32030"
+  },
+  {
+    "brand_id": "16808",
+    "brand_name": "Diasulin",
+    "strength": "30%+70% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "32249"
+  },
+  {
+    "brand_id": "26939",
+    "brand_name": "Abasaglar",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Eli Lilly and Company",
+    "duplicate_of_brand_id": "26940"
+  },
+  {
+    "brand_id": "13170",
+    "brand_name": "Feroson",
+    "strength": "100 mg/5 ml",
+    "dosage_form": "Oral Suspension",
+    "manufacturer": "Hudson Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "13115"
+  },
+  {
+    "brand_id": "10445",
+    "brand_name": "G-Paracetamol",
+    "strength": "120 mg/5 ml",
+    "dosage_form": "Oral Suspension",
+    "manufacturer": "Gonoshasthaya Pharma Ltd.",
+    "duplicate_of_brand_id": "10446"
+  },
+  {
+    "brand_id": "28990",
+    "brand_name": "Gensulin R",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26317"
+  },
+  {
+    "brand_id": "28404",
+    "brand_name": "Gensulin M30",
+    "strength": "30%+70% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26320"
+  },
+  {
+    "brand_id": "16834",
+    "brand_name": "Glarine",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "32252"
+  },
+  {
+    "brand_id": "27550",
+    "brand_name": "Glarine",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "ACI Limited",
+    "duplicate_of_brand_id": "32252"
+  },
+  {
+    "brand_id": "16777",
+    "brand_name": "Glyset R",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "27618"
+  },
+  {
+    "brand_id": "26212",
+    "brand_name": "Glyset Mix",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26211"
+  },
+  {
+    "brand_id": "16781",
+    "brand_name": "Humalog",
+    "strength": "100 unit/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Eli Lilly and Company",
+    "duplicate_of_brand_id": "26942"
+  },
+  {
+    "brand_id": "16791",
+    "brand_name": "Humulin N",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Eli Lilly and Company",
+    "duplicate_of_brand_id": "16790"
+  },
+  {
+    "brand_id": "16811",
+    "brand_name": "Humulin",
+    "strength": "30%+70% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Eli Lilly and Company",
+    "duplicate_of_brand_id": "16812"
+  },
+  {
+    "brand_id": "26943",
+    "brand_name": "Humalog Mix",
+    "strength": "75%+25%",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Eli Lilly and Company",
+    "duplicate_of_brand_id": "16784"
+  },
+  {
+    "brand_id": "16783",
+    "brand_name": "Humalog Mix",
+    "strength": "50%+50%",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Eli Lilly and Company",
+    "duplicate_of_brand_id": "26944"
+  },
+  {
+    "brand_id": "16764",
+    "brand_name": "Humulin R",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Eli Lilly and Company",
+    "duplicate_of_brand_id": "16763"
+  },
+  {
+    "brand_id": "16815",
+    "brand_name": "Insul",
+    "strength": "30%+70% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Popular Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "16814"
+  },
+  {
+    "brand_id": "26834",
+    "brand_name": "Insuman Comb",
+    "strength": "25%+75% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Synovia pharma plc",
+    "duplicate_of_brand_id": "16824"
+  },
+  {
+    "brand_id": "13649",
+    "brand_name": "Kvit-N",
+    "strength": "100 mg+200 mg+200 mcg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Kemiko Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "27182"
+  },
+  {
+    "brand_id": "26265",
+    "brand_name": "Larsulin",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Square Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26264"
+  },
+  {
+    "brand_id": "21053",
+    "brand_name": "Lopidam",
+    "strength": "370 mg/ml",
+    "dosage_form": "Injection",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "21054"
+  },
+  {
+    "brand_id": "16773",
+    "brand_name": "Maxsulin R",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26228"
+  },
+  {
+    "brand_id": "16801",
+    "brand_name": "Maxsulin N",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26227"
+  },
+  {
+    "brand_id": "16827",
+    "brand_name": "Maxsulin",
+    "strength": "50%+50% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26226"
+  },
+  {
+    "brand_id": "16826",
+    "brand_name": "Maxsulin",
+    "strength": "30%+70% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "26225"
+  },
+  {
+    "brand_id": "26703",
+    "brand_name": "Mixtard 30",
+    "strength": "30%+70% in 100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Novo Nordisk Pharma (Pvt.) Ltd",
+    "duplicate_of_brand_id": "28405"
+  },
+  {
+    "brand_id": "1601",
+    "brand_name": "Motodon",
+    "strength": "10 mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Medimet Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "1602"
+  },
+  {
+    "brand_id": "28376",
+    "brand_name": "Mypart",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Drug International Ltd.",
+    "duplicate_of_brand_id": "18271"
+  },
+  {
+    "brand_id": "28378",
+    "brand_name": "Mysulin 50/50",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Drug International Ltd.",
+    "duplicate_of_brand_id": "28379"
+  },
+  {
+    "brand_id": "24683",
+    "brand_name": "Mysulin 30/70",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Drug International Ltd.",
+    "duplicate_of_brand_id": "28377"
+  },
+  {
+    "brand_id": "16774",
+    "brand_name": "NovoRapid",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Novo Nordisk Pharma (Pvt.) Ltd",
+    "duplicate_of_brand_id": "16775"
+  },
+  {
+    "brand_id": "16828",
+    "brand_name": "NovoMix",
+    "strength": "30%+70%",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Novo Nordisk Pharma (Pvt.) Ltd",
+    "duplicate_of_brand_id": "16829"
+  },
+  {
+    "brand_id": "5971",
+    "brand_name": "Omnitrope",
+    "strength": "5 mg/1.5 ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "SANDOZ (A Novartis Division)",
+    "duplicate_of_brand_id": "5972"
+  },
+  {
+    "brand_id": "13814",
+    "brand_name": "Orabex",
+    "strength": "",
+    "dosage_form": "IM/IV Injection",
+    "manufacturer": "Jayson Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "28507"
+  },
+  {
+    "brand_id": "14498",
+    "brand_name": "Precal-D",
+    "strength": "500 mg+200 IU",
+    "dosage_form": "Tablet",
+    "manufacturer": "Premier Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "27438"
+  },
+  {
+    "brand_id": "14364",
+    "brand_name": "Precal",
+    "strength": "500 mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Premier Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "27437"
+  },
+  {
+    "brand_id": "15919",
+    "brand_name": "Prednol",
+    "strength": "1%",
+    "dosage_form": "Ophthalmic Suspension",
+    "manufacturer": "Reman Drug Laboratories Ltd.",
+    "duplicate_of_brand_id": "22275"
+  },
+  {
+    "brand_id": "26108",
+    "brand_name": "PulmoCare",
+    "strength": "100 mcg/puff",
+    "dosage_form": "Inhaler",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "29221"
+  },
+  {
+    "brand_id": "12782",
+    "brand_name": "Retigel",
+    "strength": "0.05%",
+    "dosage_form": "Topical Gel",
+    "manufacturer": "UniMed UniHealth",
+    "duplicate_of_brand_id": "30938"
+  },
+  {
+    "brand_id": "26704",
+    "brand_name": "Ryzodeg",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Novo Nordisk Pharma (Pvt.) Ltd",
+    "duplicate_of_brand_id": "26705"
+  },
+  {
+    "brand_id": "3505",
+    "brand_name": "Salmolin",
+    "strength": "100 mcg/puff",
+    "dosage_form": "Inhaler",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "duplicate_of_brand_id": "32420"
+  },
+  {
+    "brand_id": "13381",
+    "brand_name": "Seemaplex",
+    "strength": "",
+    "dosage_form": "Syrup",
+    "manufacturer": "Seema Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "13831"
+  },
+  {
+    "brand_id": "3513",
+    "brand_name": "Sultolin",
+    "strength": "100 mcg/puff",
+    "dosage_form": "Inhaler",
+    "manufacturer": "Square Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "3514"
+  },
+  {
+    "brand_id": "13595",
+    "brand_name": "Thiason",
+    "strength": "100 mg/ml",
+    "dosage_form": "IM/IV Injection",
+    "manufacturer": "Jayson Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "13596"
+  },
+  {
+    "brand_id": "16839",
+    "brand_name": "Vibrenta",
+    "strength": "100 IU/ml",
+    "dosage_form": "SC Injection",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "duplicate_of_brand_id": "27645"
+  },
+  {
+    "brand_id": "14066",
+    "brand_name": "Vitaplus",
+    "strength": "",
+    "dosage_form": "Tablet",
+    "manufacturer": "Pharmadesh Laboratories Ltd.",
+    "duplicate_of_brand_id": "14235"
+  }
+]
