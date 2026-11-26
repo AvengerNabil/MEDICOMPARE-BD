@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { Medicine } from '@/types/medicine';
 import { MEDICINES, DATABASE_STATS } from '@/data/bangladeshMedicines';
@@ -17,7 +17,8 @@ import {
   X,
   Filter,
   Pill,
-  Database
+  Database,
+  Loader2
 } from 'lucide-react';
 
 interface HeroSearchProps {
@@ -36,80 +37,87 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
   const [suggestions, setSuggestions] = useState<Medicine[]>([]);
   const [totalMatchesCount, setTotalMatchesCount] = useState<number>(0);
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [highlightIndex, setHighlightIndex] = useState(-1);
   const containerRef = useRef<HTMLDivElement>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
 
   // Quick popular search triggers
   const popularKeywords = [
+    { label: 'Seclo 20', query: 'Seclo' },
+    { label: 'Losectil 20', query: 'Losectil' },
     { label: 'Napa 500mg', query: 'Napa' },
     { label: 'Nexum 20', query: 'Nexum' },
-    { label: 'Rovista 10', query: 'Rovista' },
+    { label: 'Cef-3 200mg', query: 'Cef-3' },
     { label: 'Monas 10', query: 'Monas' },
-    { label: 'Comet 500', query: 'Comet' },
-    { label: 'Zimax 500', query: 'Zimax' },
+    { label: 'Pantobex 20', query: 'Pantobex' },
     { label: 'Azithromycin', query: 'Azithromycin' },
-    { label: 'Metformin', query: 'Metformin' },
+    { label: 'Paracetamol', query: 'Paracetamol' },
   ];
 
-  // Common dosage forms for quick filter
-  const dosageForms = ['all', 'Tablet', 'Capsule', 'Syrup', 'Suspension', 'Injection'];
-
-  // Enhanced search algorithm with multi-term partial matching
+  // Dynamic Live Search directly from full database API
   useEffect(() => {
-    const cleanQuery = query.toLowerCase().trim();
+    const cleanQuery = query.trim();
     if (!cleanQuery) {
       setSuggestions([]);
       setTotalMatchesCount(0);
       setIsOpen(false);
+      setIsLoading(false);
       return;
     }
 
-    // Split query by whitespace for multi-term search e.g. "napa 500" or "nexum tab"
-    const terms = cleanQuery.split(/\s+/).filter(Boolean);
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
 
+    setIsLoading(true);
+
+    const timer = setTimeout(async () => {
+      try {
+        const url = `/api/medicines/search?q=${encodeURIComponent(cleanQuery)}&type=${filterType}&dosage=${dosageFilter}&limit=12`;
+        const res = await fetch(url, { signal: controller.signal });
+        if (res.ok) {
+          const data = await res.json();
+          setSuggestions(data.results || []);
+          setTotalMatchesCount(data.total_matches || 0);
+          setIsOpen(true);
+        } else {
+          fallbackLocalSearch(cleanQuery);
+        }
+      } catch (err: any) {
+        if (err.name !== 'AbortError') {
+          fallbackLocalSearch(cleanQuery);
+        }
+      } finally {
+        setIsLoading(false);
+      }
+    }, 180); // Fast 180ms debounce
+
+    return () => {
+      clearTimeout(timer);
+      controller.abort();
+    };
+  }, [query, filterType, dosageFilter]);
+
+  // Fallback to local array in case network is disconnected
+  const fallbackLocalSearch = (cleanQuery: string) => {
+    const terms = cleanQuery.toLowerCase().split(/\s+/).filter(Boolean);
     const matches = MEDICINES.filter((med) => {
-      // Dosage form check
       if (dosageFilter !== 'all' && med.dosageForm.toLowerCase() !== dosageFilter.toLowerCase()) {
         return false;
       }
-
-      const bName = med.brandName.toLowerCase();
-      const bNameBn = med.brandNameBn ? med.brandNameBn.toLowerCase() : '';
-      const gName = med.genericName.toLowerCase();
-      const gNameBn = med.genericNameBn ? med.genericNameBn.toLowerCase() : '';
-      const mName = med.manufacturer.toLowerCase();
-      const str = med.strength.toLowerCase();
-
-      // For filterType === 'brand'
-      if (filterType === 'brand') {
-        return terms.every(term => bName.includes(term) || bNameBn.includes(term) || str.includes(term));
-      }
-      // For filterType === 'generic'
-      if (filterType === 'generic') {
-        return terms.every(term => gName.includes(term) || gNameBn.includes(term) || str.includes(term));
-      }
-      // For filterType === 'mfr'
-      if (filterType === 'mfr') {
-        return terms.every(term => mName.includes(term));
-      }
-
-      // 'all'
-      return terms.every(term => 
-        bName.includes(term) ||
-        bNameBn.includes(term) ||
-        gName.includes(term) ||
-        gNameBn.includes(term) ||
-        mName.includes(term) ||
-        str.includes(term) ||
-        med.activeIngredients.some(i => i.name.toLowerCase().includes(term))
-      );
+      const b = med.brandName.toLowerCase();
+      const g = med.genericName.toLowerCase();
+      const m = med.manufacturer.toLowerCase();
+      const s = med.strength.toLowerCase();
+      return terms.every(t => b.includes(t) || g.includes(t) || m.includes(t) || s.includes(t));
     });
-
     setTotalMatchesCount(matches.length);
-    setSuggestions(matches.slice(0, 10)); // Display top 10 relevant matches
+    setSuggestions(matches.slice(0, 10));
     setIsOpen(true);
-    setHighlightIndex(-1);
-  }, [query, filterType, dosageFilter]);
+  };
 
   // Click outside listener
   useEffect(() => {
@@ -260,7 +268,11 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
           {/* Search Box Input */}
           <div className="relative group">
             <div className="absolute inset-y-0 left-0 pl-4.5 flex items-center pointer-events-none text-brand-teal">
-              <Search className="h-5 w-5" />
+              {isLoading ? (
+                <Loader2 className="h-5 w-5 animate-spin text-brand-teal" />
+              ) : (
+                <Search className="h-5 w-5" />
+              )}
             </div>
 
             <input
@@ -268,7 +280,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               onFocus={() => {
-                if (query.trim()) setIsOpen(true);
+                if (query.trim() && suggestions.length > 0) setIsOpen(true);
               }}
               onKeyDown={handleKeyDown}
               placeholder={t.hero.searchPlaceholder}
@@ -316,7 +328,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
                   </span>
                 </span>
                 <span className="text-[11px] text-slate-400">
-                  {locale === 'bn' ? 'শীর্ষ ১০টি প্রদর্শিত' : 'Showing top 10'}
+                  {locale === 'bn' ? `শীর্ষ ${suggestions.length}টি প্রদর্শিত` : `Showing top ${suggestions.length}`}
                 </span>
               </div>
 
@@ -387,8 +399,6 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
                 key={item.query}
                 onClick={() => {
                   setQuery(item.query);
-                  const found = MEDICINES.find(m => m.brandName.toLowerCase().includes(item.query.toLowerCase()) || m.genericName.toLowerCase().includes(item.query.toLowerCase()));
-                  if (found) handleSelect(found);
                 }}
                 className="rounded-full bg-slate-100 px-2.5 py-1 text-brand-text font-medium hover:bg-brand-mintLight/80 hover:text-brand-teal transition-colors"
               >

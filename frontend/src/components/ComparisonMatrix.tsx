@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { Medicine } from '@/types/medicine';
 import { MEDICINES } from '@/data/bangladeshMedicines';
@@ -17,7 +17,8 @@ import {
   Search,
   Filter,
   CheckCircle2,
-  Info
+  Info,
+  Loader2
 } from 'lucide-react';
 
 interface ComparisonMatrixProps {
@@ -37,29 +38,73 @@ export const ComparisonMatrix: React.FC<ComparisonMatrixProps> = ({
   const [mfrFilter, setMfrFilter] = useState<string>('all');
   const [subSearch, setSubSearch] = useState<string>('');
 
+  // Dynamic API state for real database matches
+  const [apiExactMatches, setApiExactMatches] = useState<Medicine[]>([]);
+  const [apiAlternatives, setApiAlternatives] = useState<Medicine[]>([]);
+  const [isLoadingApi, setIsLoadingApi] = useState<boolean>(false);
+
   const targetGeneric = selectedMedicine.genericName.toLowerCase().trim();
   const targetStrength = selectedMedicine.strength.toLowerCase().trim();
   const targetForm = selectedMedicine.dosageForm.toLowerCase().trim();
 
-  // 1. Exact Bioequivalent Composition Matches
+  // Fetch real database alternatives dynamically whenever selectedMedicine changes
+  useEffect(() => {
+    let isMounted = true;
+    setIsLoadingApi(true);
+
+    fetch(`/api/medicines/alternatives?id=${encodeURIComponent(selectedMedicine.id)}`)
+      .then((res) => {
+        if (!res.ok) throw new Error('Failed to fetch alternatives');
+        return res.json();
+      })
+      .then((data) => {
+        if (isMounted) {
+          if (Array.isArray(data.exactMatches)) {
+            setApiExactMatches(data.exactMatches);
+          }
+          if (Array.isArray(data.alternativeFormulations)) {
+            setApiAlternatives(data.alternativeFormulations);
+          }
+          setIsLoadingApi(false);
+        }
+      })
+      .catch((err) => {
+        console.warn('Fallback to local array for comparison matrix:', err);
+        if (isMounted) {
+          setIsLoadingApi(false);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [selectedMedicine.id]);
+
+  // 1. Exact Bioequivalent Composition Matches (Merge API results with local fallback)
   const exactMatches = useMemo(() => {
+    if (apiExactMatches.length > 0) {
+      return apiExactMatches;
+    }
     return MEDICINES.filter((m) => {
       const g = m.genericName.toLowerCase().trim();
       const s = m.strength.toLowerCase().trim();
       const f = m.dosageForm.toLowerCase().trim();
       return g === targetGeneric && s === targetStrength && f === targetForm;
     });
-  }, [targetGeneric, targetStrength, targetForm]);
+  }, [apiExactMatches, targetGeneric, targetStrength, targetForm]);
 
   // 2. Alternative Formulations (Same generic, different strength or form)
   const alternativeFormulations = useMemo(() => {
+    if (apiAlternatives.length > 0) {
+      return apiAlternatives;
+    }
     return MEDICINES.filter((m) => {
       const g = m.genericName.toLowerCase().trim();
       const s = m.strength.toLowerCase().trim();
       const f = m.dosageForm.toLowerCase().trim();
       return g === targetGeneric && (s !== targetStrength || f !== targetForm);
     });
-  }, [targetGeneric, targetStrength, targetForm]);
+  }, [apiAlternatives, targetGeneric, targetStrength, targetForm]);
 
   // Filter & Sort active list
   const activeList = activeTab === 'exact' ? exactMatches : alternativeFormulations;
