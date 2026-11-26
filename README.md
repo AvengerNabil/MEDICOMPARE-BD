@@ -3,11 +3,20 @@
 > *“Compare Medicines. Understand Better. Save Smarter.”*  
 > *“ওষুধ চিনুন, দাম তুলনা করুন, সচেতন সিদ্ধান্ত নিন।”*
 
+[![Live Demo](https://img.shields.io/badge/Live%20Website-medicomparebd.vercel.app-2E7D32?style=for-the-badge&logo=vercel)](https://medicomparebd.vercel.app)
+[![Supabase](https://img.shields.io/badge/Database-Supabase%20PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![DGDA Aligned](https://img.shields.io/badge/DGDA-21%2C646%2B%20Medicines-102A43?style=for-the-badge&logo=medico)](https://dgda.gov.bd)
+
+---
+
+## 🌐 Live Production Deployment
+
+- **Live Production URL:** 👉 **[https://medicomparebd.vercel.app](https://medicomparebd.vercel.app)**
+- **Cloud Database:** Hosted on **Supabase PostgreSQL 17** (Mumbai Cluster)
+- **Dataset Scale:** **21,646** Verified DGDA medicines with sub-5ms typeahead search.
 
 ---
 
